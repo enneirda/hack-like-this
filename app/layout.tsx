@@ -19,37 +19,39 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en">
-      <body className={sourceCodePro.className}>
+    <html lang="en" className={sourceCodePro.className}>
+      <body className="antialiased max-w-2xl mb-40 flex flex-col md:flex-row mx-4 mt-8 lg:mx-auto">
+      <main className="flex-auto min-w-0 mt-6 flex flex-col px-2 md:px-0">
 
+        <div className="dropdown flex  flex-col items-center" >
+          
+          <Link
+            href="/"
+            className={`mb-3 text-2xl font-semibold border-r-2 cursor-text hover:bg-pink-100`}
+            id="blink_text"
+          >
+            <h2>
+              HackLike{" "}
+              <span className={`text-pink-500`}>this</span>
+              <span>.</span>
+            </h2>
+          
 
-        <div className="dropdown flex  flex-col items-center mt-16 cursor-text" >
-            <Link
-              href="/"
-              className={`mb-3 text-2xl font-semibold border-r-2 hover:bg-gray-100`}
-              id="blink_text"
-            >
-              <h2>
-                HackLike this.
-              </h2>
+          </Link>
 
-            </Link>
+        <ul className="ml-72 mt-8 p-2 dropdown-menu absolute hidden border transition-colors hover:border-gray-300 rounded-lg bg-black" >
+          <li className="hover:bg-pink-100">
+          <Link href="/blog"> blog </Link>
+          </li>
+          <li className="hover:bg-pink-100">
+          <Link href="/guestbook"> guestbook </Link>
+          </li>
+          <li className="hover:bg-pink-100">
+          <Link href="/"> about </Link>
+          </li>
+        </ul>
 
-          <ul className="pl-72 dropdown-menu absolute hidden" >
-            <li>
-            <Link href="/blog"> blog </Link>
-            </li>
-            <li>
-            <Link href="/guestbook"> guestbook </Link>
-            </li>
-            <li>
-            <Link href="/"> about </Link>
-            </li>
-
-          </ul>
-
-        </div>
-        <main className="flex min-h-screen flex-col items-center justify-between p-16">
+      </div>
           {children}
         </main>
       </body>
