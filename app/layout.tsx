@@ -2,9 +2,6 @@ import type { Metadata } from "next";
 import { Source_Code_Pro } from "next/font/google";
 import "./globals.css";
 import Link from "next/link";
-import { Menu } from '@headlessui/react'
-import { HeaderMenu } from "./ui/HeaderMenu";
-
 
 const sourceCodePro = Source_Code_Pro({ subsets: ["latin"] });
 
