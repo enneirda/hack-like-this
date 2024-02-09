@@ -1,4 +1,4 @@
-import { getBlogPosts } from "@/app/content/blog";
+import { getBlogPosts } from "@/content/blog";
 import { CustomMDX } from "@/app/ui/mdx";
 
 const BlogPost = () => {
