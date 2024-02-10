@@ -10,7 +10,7 @@ export const HeaderMenu = () => {
         <Link
             href="/"
             className={`mb-3 text-2xl font-semibold cursor-text hover:bg-pink-100 relative w-[max-content] font-mono before:absolute before:inset-0 before:bg-black before:animate-typewriter after:absolute after:inset-0 after:w-[0.125em] after:animate-blink
-            after:bg-pink-100 hover:bg-opacity-50`}
+            after:bg-pink-100 hover:bg-opacity-20`}
         >
             <h2>
                 HackLike {" "}
@@ -22,13 +22,16 @@ export const HeaderMenu = () => {
         </Link>
 
         <ul className="ml-72 mt-8 p-2 dropdown-menu absolute hidden border hover:border-gray-300 rounded-lg bg-black" >
-        <li className="hover:bg-pink-100 hover:bg-opacity-50">
+        <li className="hover:bg-pink-100 hover:bg-opacity-20">
                 <Link href="/"> home </Link>
             </li>
-            <li className="hover:bg-pink-100 hover:bg-opacity-50">
+            <li className="hover:bg-pink-100 hover:bg-opacity-20">
                 <Link href="/blog"> blog </Link>
             </li>
-            <li className="hover:bg-pink-100 hover:bg-opacity-50">
+            <li className="hover:bg-pink-100 hover:bg-opacity-20">
+                <Link href="/demos"> demos </Link>
+            </li>
+            <li className="hover:bg-pink-100 hover:bg-opacity-20">
                 <Link href="/guestbook"> guestbook </Link>
             </li>
         </ul>

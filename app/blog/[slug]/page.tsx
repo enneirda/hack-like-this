@@ -1,10 +1,16 @@
 import { getBlogPosts } from "@/app/utilities/blog";
 import { CustomMDX } from "@/app/ui/mdx";
+import { constants } from "fs/promises";
+import { notFound } from 'next/navigation';
 
-const BlogPost = () => {
 
+const BlogPost = ({params}) => {
+    const post = getBlogPosts().find((post) => post.slug === params.slug);
 
-    const post = getBlogPosts()[0];
+    if (!post) {
+        notFound();
+    }
+
     return <section><article className="prose dark:prose-invert">
     <CustomMDX source={post.content} />
   </article>
