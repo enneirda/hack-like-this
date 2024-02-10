@@ -1,6 +1,5 @@
 import { getBlogPosts } from "@/app/utilities/blog";
 import { CustomMDX } from "@/app/ui/mdx";
-import { constants } from "fs/promises";
 import { notFound } from 'next/navigation';
 
 

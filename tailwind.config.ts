@@ -13,16 +13,61 @@ const config: Config = {
         "gradient-conic":
           "conic-gradient(from 180deg at 50% 50%, var(--tw-gradient-stops))",
       },
+      colors: {
+        "default-blush": {
+          light: '#f58ccc',
+          DEFAULT: '#f58ccc',
+          dark: '#f5b5dc',
+        },
+        "dark-pink-1": {
+          light: '#f545b0',
+          DEFAULT: '#f545b0',
+          dark: '#f545b0',
+        }
+
+      },
       typography: {
         DEFAULT: {
           css: {
-            color: '#ffdef2',
+            bg: 'white',
+            color: '#f58ccc',
             a: {
-              color: '#ffdef2',
+              color: '#f58ccc',
               '&:hover': {
-                color: '#fbc9e8',
+                color: '#f5b5dc',
               },
             },
+            h2: {
+              color: '#f545b0',
+            }
+          },
+        },
+        invert: {
+          css: {
+            color: '#f5b5dc',
+            a: {
+              color: '#f58ccc',
+              '&:hover': {
+                color: '#f5b5dc',
+              },
+            },
+            h2: {
+              color: '#f545b0',
+            }
+          },
+        },
+        light: {
+          css: {
+            color: '#f58ccc',
+            a: {
+              color: '#f58ccc',
+              '&:hover': {
+                color: '#f5b5dc',
+              },
+            },
+            h2: {
+              color: '#f545b0',
+            }
           },
         },
       },

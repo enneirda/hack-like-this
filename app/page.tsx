@@ -31,7 +31,7 @@ export default function Home() {
 
     <Link
           href={`/blog/${sortedBlogs[0].slug}`}
-          className="group rounded-lg border border-gray-600  px-5 py-4 transition-colors hover:border-gray-300 hover:bg-gray-100 hover:dark:border-neutral-700 hover:dark:bg-neutral-800/30"
+          className="group rounded-lg border border-fuchsia-300  px-5 py-4 transition-colors hover:border-fuchsia-200 hover:bg-gray-100 hover:dark:border-neutral-700 hover:dark:bg-neutral-800/30"
         >
           <h2 className={`mb-3 text-xl font-bold text-center`}>
             Latest Blog Post
@@ -45,7 +45,7 @@ export default function Home() {
 
     <Link
           href={`/demos`}
-          className="group rounded-lg border border-gray-600  px-5 py-4 transition-colors hover:border-gray-300 hover:bg-gray-100 hover:dark:border-neutral-700 hover:dark:bg-neutral-800/30"
+          className="group rounded-lg border border-fuchsia-300  px-5 py-4 transition-colors hover:border-fuchsia-200 hover:bg-gray-100 hover:dark:border-neutral-700 hover:dark:bg-neutral-800/30"
         >
           <h2 className={`mb-3 text-xl font-bold text-center`}>
             Latest Demo
