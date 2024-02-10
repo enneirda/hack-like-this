@@ -27,32 +27,23 @@ const config: Config = {
         },
       },
       animation: {
-        typewriter: 'typewriter 2s steps(11) forwards',
-        caret: 'typewriter 2s steps(11) forwards, blink 1s steps(11) infinite 2s',
+        blink: 'typewriter 2s steps(14) forwards, blink 1s steps(14) infinite',
+        typewriter: "typewriter 2s steps(14) forwards"
       },
       keyframes: {
-        typewriter: {
-          to: {
-            left: '100%',
-          },
-        },
         blink: {
           '0%': {
-            opacity: '0',
-          },
-          '0.1%': {
-            opacity: '1',
+            'opacity': '0',
           },
           '50%': {
-            opacity: '1',
-          },
-          '50.1%': {
-            opacity: '0',
-          },
-          '100%': {
-            opacity: '0',
+            'opacity': '1',
           },
         },
+        typewriter: {
+          to: {
+            left: "100%"
+          }
+        }
       },
     },
   },

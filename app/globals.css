@@ -24,7 +24,7 @@ body {
       rgb(var(--background-end-rgb))
     )
     rgb(var(--background-start-rgb));
-  cursor: text
+  cursor: text;
 }
 
 @layer utilities {
@@ -32,19 +32,6 @@ body {
     text-wrap: balance;
   }
 }
-
-
-@keyframes blink{
-  0%{border-right: .15em solid transparent;}
-  50%{border-color:rgb(245, 181, 220); border-right: .15em solid;}
-}
-
-#blink_text{	
-  animation-name:blink;
-  animation-duration:1s;
-  animation-iteration-count:Infinite;
-  animation-timing-function: steps(1);
-  }
 
   .dropdown:hover .dropdown-menu {
     display: block;
