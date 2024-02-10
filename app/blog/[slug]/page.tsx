@@ -4,7 +4,7 @@ import { constants } from "fs/promises";
 import { notFound } from 'next/navigation';
 
 
-const BlogPost = ({params}) => {
+const BlogPost = ({params}: {params: {slug: string}}) => {
     const post = getBlogPosts().find((post) => post.slug === params.slug);
 
     if (!post) {

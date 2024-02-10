@@ -18,7 +18,7 @@ export default function Home() {
   
   return (<div>
     <p className="my-8">
-      Welcome to Hack Like This, name inspired by Muni Long's "Black Like This." This blog was created by a black woman who is in love with solving problems through programming. Much like being black feels magical, so does being able to "hack" things together... like this
+      Welcome to Hack Like This, name inspired by Muni Long&apos;s &quot;Black Like This.&quot; This blog was created by a black woman who is in love with solving problems through programming. Much like being black feels magical, so does being able to &quot;hack&quot; things together... like this
     </p>
 
 
