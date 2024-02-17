@@ -1,6 +1,5 @@
 import Link from "next/link";
 import { getBlogPosts } from "../utilities/blog";
-import { Suspense } from "react";
 
 const Blog = () => {
     const allBlogs = getBlogPosts();

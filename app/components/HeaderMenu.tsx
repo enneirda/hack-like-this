@@ -9,7 +9,7 @@ export const HeaderMenu = () => {
 
         <Link
             href="/"
-            className={`mb-3 text-2xl font-semibold cursor-text hover:bg-pink-100 relative w-[max-content] font-mono before:absolute before:inset-0 before:bg-white before:dark:bg-black before:animate-typewriter after:absolute after:inset-0 after:w-[0.125em] after:animate-blink
+            className={`mb-8 text-2xl font-semibold cursor-text hover:bg-pink-100 relative w-[max-content] font-mono before:absolute before:inset-0 before:bg-white before:dark:bg-black before:animate-typewriter after:absolute after:inset-0 after:w-[0.125em] after:animate-blink
             after:bg-default-blush after:dark:bg-default-blush-dark hover:bg-opacity-20`}
         >
             <h2>
