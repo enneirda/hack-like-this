@@ -22,7 +22,9 @@
     "next": "14.1.0",
     "next-mdx-remote": "^4.4.1",
     "react": "^18",
+    "react-bootstrap": "^2.10.1",
     "react-dom": "^18",
+    "react-google-slides": "^4.0.0",
     "react-youtube": "^10.1.0",
     "sugar-high": "^0.5.6"
   },
